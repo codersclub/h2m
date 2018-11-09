@@ -7,7 +7,8 @@
     this.submitAIssue = document.querySelector('#submit-a-issue')
     this.implementSwitch = document.querySelectorAll('[name=implement]')
     this.state = {
-      implement: 'CommonMark',
+//      implement: 'CommonMark',
+/*vot*/      implement: 'MarkdownExtra',
     }
     this.bindEvents()
   }
@@ -48,7 +49,7 @@
   }
 
   Converter.prototype.setM = function (md) {
-    console.log(JSON.stringify(md))
+//vot    console.log(JSON.stringify(md))
     this.markDownEditor.value = md
     this.markDownPreviewer.innerHTML = markdown.toHTML(md)
   }

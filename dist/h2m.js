@@ -29,6 +29,16 @@ module.exports = {
       return `**${node.md}**`
     }
   },
+  sup: function (node) {
+    if (node.md) {
+      return `<sup>${node.md}</sup>`
+    }
+  },
+  sub: function (node) {
+    if (node.md) {
+      return `<sub>${node.md}</sub>`
+    }
+  },
   h1: function (node) {
     if (node.md) {
       return `\n# ${node.md}\n`
